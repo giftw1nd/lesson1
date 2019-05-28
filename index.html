@@ -22,17 +22,20 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
   
-  <h1>HELLO WORLD</h1>
   <!-- Add your site or application content here -->
-  <div style="display: inline; background-color: red; height:150px;">sdsd</div><div style="display: inline; background-color: yellow; height:150px;">dfdf</div>
+ <div class="headerclass asdasd"><h1 class="headerstance">Header</h1> dtgdfh</div>
+ <div class="headerclass dfgdfgdfg" style="display: none;"><h1 class="headerstance">Header2</h1> dtgdfh</div>
+ <button id="clickme">click me</button>
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script>
-  
-  alert(document.getElementById('rrr').innerHTML )
+    $("#clickme").on('click', function(){
+        $(".asdasd").hide(1000);
+        $(".dfgdfgdfg").show(1000);
+    });
   </script>
 
 </body>
